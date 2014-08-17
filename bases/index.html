@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<title>Base switcher</title>
+</head>
+<body>
+	<header>
+		<h1> <a id="back" href="../index.html"><</a> Base switcher</h1>
+	</header>
+
+	<main>
+		<label for="source">Convert from the base </label> 
+		<input type="number" step="1" min="2" max="36" id="source" value="10" name="source" placeholder="10" class="text" />
+		
+		<label for="destination"> to the base </label> 
+		<input type="number" step="1" min="2" max="36" id="destination" value="2" name="destination" placeholder="2" class="text" />
+		
+		<label for="destination"> the number : </label> 
+		<input type="text" id="nombre" value="42" name="nombre" placeholder="2" class="text" />
+
+		<button onclick="return convert();" id="convertir" class="centrer submit-centrer">Convert</button>
+
+		<p id="resultat"></p>
+
+		<aside class="note">
+			<p>Aviable bases are from 2 to 36.</p>
+			<p>The number have to be bettwen 0 to 2&nbsp;147&nbsp;483&nbsp;647 included.</p>
+		</aside>
+
+	</main>
+
+	<footer id="footer">
+		<a href="http://tomcanac.com">Tom Canac</a>
+	</footer>
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function convert() {
+			var valeur = document.getElementById('nombre').value;
+			var base_source = document.getElementById('source').value;
+			var base_destin = document.getElementById('destination').value;
+			var result = parseInt(valeur, base_source).toString(base_destin);
+			if (String(result) == 'NaN') {
+				result = 'la base '+base_source+' est impossible pour '+valeur; // par exemple "3" est impossible en binaire, où il n’y a que 0 et des 1.
+			}
+			document.getElementById('resultat').innerHTML = result;
+			return false;
+		}
+		convert();
+		/* ]]> */
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<title>Encode and decore Base64</title>
+</head>
+<body>
+	<header>
+		<h1> <a id="back" href="../index.html"><</a> Base64 code and decode</h1>
+	</header>
+
+	<main>
+		<label for="data">Données source : </label> 
+		<textarea id="data" rows="12" placeholder="Placez votre texte ici" class="centrer"></textarea>
+		<p class="centrer">
+			<button onclick="go('encode');" class="submit-centrer blue"> &lt; Encoder &gt; </button>
+			<button onclick="go('decode');" class="submit-centrer"> &gt; Décoder &lt; </button>
+		</p>
+		<textarea id="output" rows="8" cols="50" readonly class="centrer" style="display:none;"></textarea>
+	</main>
+
+	<footer>
+		<a href="http://tomcanac.com">Tom Canac</a>
+	</footer>
+
+	<script type="text/javascript" src="base64.js"></script>
+	<script type="text/javascript">
+		function go(encdec) {
+			var datain = document.getElementById('data').value;
+			var dataout = '';
+			try {
+				if (encdec == 'decode') {
+					dataout = base64.decode(datain);
+				}
+				else {
+					dataout = base64.encode(datain);
+				}
+			}
+			catch (e) {
+				dataout = e;
+			}
+
+			document.getElementById('output').value = dataout;
+			document.getElementById('output').style.display = 'block';
+			return false;
+		}
+	</script>
+</body>
+</html>

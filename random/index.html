@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<title>Random number</title>
+</head>
+<body>
+	<header>
+		<h1> <a id="back" href="../index.html"><</a> Random number</h1>
+	</header>
+
+	<main>
+			<div id="select-rang">
+				<label for="min">Max&nbsp;: </label>
+					<input type="number" id="min" name="min" min="0" step="1" value="1" /><br/>
+				<label for="min">Min&nbsp;: </label>
+					<input type="number" id="max" name="max" min="0" step="1" value="10" />
+			</div>
+
+			<button onclick="randomize()" class="centrer submit-centrer">Generate</button>
+			<div id="result"></div>
+	</main>
+
+	<footer id="footer">
+		<a href="http://tomcanac.com">Tom Canac</a>
+	</footer>
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var nbLancer = 0;
+		function randomize() {
+			var min = document.getElementById('min').value;
+			var max = document.getElementById('max').value;
+			var rand = Math.floor(Math.min(min, max) + Math.random()*Math.abs(min-max));
+			document.getElementById('result').innerHTML = rand;
+			document.getElementById('result').style.fontSize = '2em';
+			nbLancer++;
+		}
+		/* ]]> */
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+{
+  "name": "Computer Maths",
+  "description": "Basic mathematic operations applied to computers : base switching, files weight converter, random number generator",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "developer": {
+    "name": "Tom Canac",
+    "url": "http://tomcanac.com"
+  },
+  "default_locale": "en"
+}
