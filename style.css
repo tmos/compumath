@@ -1,8 +1,11 @@
 /*General*/
-* {
+	* {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+	html {
+		font-size:100%;
 	}
 	body {
 		margin: 0;
@@ -10,9 +13,13 @@
 		background-color: white;
 		text-align: center;
 		font-family: 'trebuchet ms', arial, sans-serif;
+		font-size:1.1rem;
 	}
 	a {
 		text-decoration: none;
+	}
+	#about main {
+		text-align:left;
 	}
 /*header bar*/
 	header {
@@ -29,35 +36,31 @@
 		margin: 0;
 		padding: .5rem 0;
 		font-size: 2rem;
+		font-weight:bold;
 	}
-	#back {
-		padding-left: 2rem;
-		padding-right: 2rem;
-		color: #fff;
-		background-color: #D7D7D7;
-	}
+	
 	#title {
 		text-align: center;
 	}
 /*main content*/
-main {
-	background-color: #E7E7E7;
-	margin: 0 auto 0;
-	padding: 20px;
-	border-top: 1px solid #D7D7D7;
-	border-bottom: 1px solid #D7D7D7;
-}
-main > * {
-	width: 95%;
-	margin-left:auto;
-	margin-right:auto;
-}
+	main {
+		background-color: #E7E7E7;
+		margin: 0 auto 0;
+		padding: 20px;
+		border-top: 1px solid #D7D7D7;
+		border-bottom: 1px solid #D7D7D7;
+	}
+	main > * {
+		width: 95%;
+		margin-left:auto;
+		margin-right:auto;
+	}
 /*footer*/
 	footer {
 		padding: 2rem 0;
 		font-size: .9rem;
 	}
-/*navigation*/
+/*homepage navigation*/
 	nav ul {
 		list-style: none;
 		padding: 0;
@@ -67,7 +70,7 @@ main > * {
 		margin: 5px;
 		box-shadow: 0px 1px 1px #C7C7C7;
 		border-radius: 10px;
-		line-height: 48px;
+		line-height: 48px;/*the height of the icons*/
 		text-shadow: 1px 1px 2px silver;
 		text-align: left;
 	}
@@ -80,21 +83,70 @@ main > * {
 		border: none;
 		float: left;
 	}
-/*forms*/
+/*form and ui*/
+	input,
+	select,
+	textarea,
+	button {
+		border-radius:4px;
+		border:1px solid lightgrey;
+	}
 	input,
 	select,
 	textarea {
 		display: block;
 		padding: .5rem;
 		font-size: 1rem;
+		background-color:#fff;
 	}
 	input {
 		margin-bottom: 1rem;
 	}
+	label {
+		display:block;
+		text-align:left;
+		padding-left:.5rem;
+	}
+	input[readonly] {
+		background:none;
+		border:none;
+	}
+	button,
+	#back {
+		cursor:pointer;
+		margin:1rem 0;
+		padding:1rem;
+		font-size:1.5rem;
+		font-weight:bold;
+
+		color:white;
+		border:none;
+		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2), 0px -1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+		background-color: #277AC1;
+		background-image: linear-gradient(to bottom, #43A6E2, #277AC1);
+	}
+	#back {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 /**/
 	.note {
 		margin-top: 2rem;
+		padding:1rem;
 		border-radius: 3px;
-		background-color: rgba(100, 200, 100, .4);
+		color:#fff;
+		text-shadow:0 1px 1px rgba(0,0,0,.8);
+		background-color: rgba(100, 200, 100, .5);
 		border:1px solid rgba(100, 200, 100, 1);
+	}
+	#all_units {
+		text-align:left;
+	}
+	#all_units input {
+		text-align:right;
+		width:50%;
+	}
+	#all_units input,
+	#all_units label {
+		display:inline;
 	}

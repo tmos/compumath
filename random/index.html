@@ -12,20 +12,15 @@
 	</header>
 
 	<main>
-			<div id="select-rang">
-				<label for="min">Max&nbsp;: </label>
-					<input type="number" id="min" name="min" min="0" step="1" value="1" /><br/>
-				<label for="min">Min&nbsp;: </label>
-					<input type="number" id="max" name="max" min="0" step="1" value="10" />
-			</div>
-
-			<button onclick="randomize()" class="centrer submit-centrer">Generate</button>
-			<div id="result"></div>
+		<label for="min">Max&nbsp;: </label>
+		<input type="number" id="min" name="min" min="0" step="1" value="1" /><br/>
+	
+		<label for="min">Min&nbsp;: </label>
+		<input type="number" id="max" name="max" min="0" step="1" value="10" />
+	
+		<button onclick="randomize()" class="centrer submit-centrer">Generate</button>
+		<div id="result"></div>
 	</main>
-
-	<footer id="footer">
-		<a href="http://tomcanac.com">Tom Canac</a>
-	</footer>
 
 	<script type="text/javascript">
 		/* <![CDATA[ */
@@ -38,6 +33,7 @@
 			document.getElementById('result').style.fontSize = '2em';
 			nbLancer++;
 		}
+		randomize();
 		/* ]]> */
 	</script>
 </body>

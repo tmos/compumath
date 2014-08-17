@@ -13,7 +13,7 @@
 
 	<main>
 		<label for="source">Quantité&nbsp;: </label> 
-		<input type="number" onkeyup="convert();" step="1" min="2" max="10000000000" id="source" value="1024" name="source" placeholder="1024" class="text" />
+		<input type="number" onkeyup="convert();" step="1" min="2" max="10000000000" id="source" value="1024" name="source" placeholder="1024" />
 		<select name="unite_i" id="unite_i" onchange="convert();">
 			<option value="o">o (octet)</option>
 			<option value="k" selected>ko (kilooctet)</option>
@@ -30,65 +30,75 @@
 
 		<table id="all_units">
 			<tr>
-				<td class="bloc">
-					<input readonly type="text" id="o" class="text" />
+				<td>
+					<input readonly type="text" id="o"/>
 					<label for="o">o (octet)</label> 
 				</td>
-				<td></td>
 			</tr>
 			<tr>
-				<td class="bloc">
-					<input readonly type="text" id="k" class="text" />
+				<td>
+					<input readonly type="text" id="k"/>
 					<label for="k">ko (kilooctet)</label> 
 				</td>
-				<td class="bloc">
-					<input readonly type="text" id="ki" class="text" />
+			</tr>
+			<tr>
+
+				<td>
+					<input readonly type="text" id="ki"/>
 					<label for="ki">kio (kibioctet)</label> 
 				</td>
 			</tr>
 			<tr>
-				<td class="bloc">
-					<input readonly type="text" id="m" class="text" />
+				<td>
+					<input readonly type="text" id="m"/>
 					<label for="m">Mo (mégaoctet)</label> 
 				</td>
-				<td class="bloc">
-					<input readonly type="text" id="mi" class="text" />
+			</tr>
+			<tr>
+
+				<td>
+					<input readonly type="text" id="mi"/>
 					<label for="mi">Mio (mébioctet)</label> 
 				</td>
 			</tr>
 			<tr>
-				<td class="bloc">
-					<input readonly type="text" id="g" class="text" />
+				<td>
+					<input readonly type="text" id="g"/>
 					<label for="g">Go (gigaoctet)</label> 
 				</td>
-				<td class="bloc">
-					<input readonly type="text" id="gi" class="text" />
+			</tr>
+			<tr>
+
+				<td>
+					<input readonly type="text" id="gi"/>
 					<label for="gi">Gio (gibioctet)</label> 
 				</td>
 			</tr>
 			<tr>
-				<td class="bloc">
-					<input readonly type="text" id="t" class="text" />
+				<td>
+					<input readonly type="text" id="t"/>
 					<label for="t">To (téraoctet)</label> 
 				</td>
-				<td class="bloc">
-					<input readonly type="text" id="ti" class="text" />
+			</tr>
+			<tr>
+
+				<td>
+					<input readonly type="text" id="ti"/>
 					<label for="ti">Tio (tébioctet)</label> 
 				</td>
 			</tr>
 		</table>
 
 		<aside class="note">
-			<p>
-				1&nbsp;To = 1&thinsp;000&nbsp;Go = 1&thinsp;000&thinsp;000&nbsp;Mo = 1&thinsp;000&thinsp;000&thinsp;000&nbsp;ko = 1&thinsp;000&thinsp;000&thinsp;000&thinsp;000&nbsp;o = 1&nbsp;Tio = 1&thinsp;024&nbsp;Gio = 1&thinsp;048&thinsp;576&nbsp;Mio = 1&thinsp;073&thinsp;741&thinsp;824&nbsp;kio = 1&thinsp;099&thinsp;511&thinsp;627&thinsp;776&nbsp;o
+			<p style="text-align:left;">
+			1&nbsp;To =<br> 1&thinsp;000&nbsp;Go =<br> 1&thinsp;000&thinsp;000&nbsp;Mo =<br> 1&thinsp;000&thinsp;000&thinsp;000&nbsp;ko =<br> 1&thinsp;000&thinsp;000&thinsp;000&thinsp;000&nbsp;o
+			</p>
+			<p style="text-align:left;">
+			1&nbsp;Tio =<br> 1&thinsp;024&nbsp;Gio =<br> 1&thinsp;048&thinsp;576&nbsp;Mio =<br> 1&thinsp;073&thinsp;741&thinsp;824&nbsp;kio =<br> 1&thinsp;099&thinsp;511&thinsp;627&thinsp;776&nbsp;o
 			</p>
 		</aside>
 
 	</main>
-
-	<footer id="footer">
-		<a href="http://tomcanac.com">Tom Canac</a>
-	</footer>
 
 	<script type="text/javascript">
 		/* <![CDATA[ */
