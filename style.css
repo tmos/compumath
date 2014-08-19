@@ -107,7 +107,8 @@
 		text-align:left;
 		padding-left:.5rem;
 	}
-	input[readonly] {
+	input[readonly],
+	textarea[readonly] {
 		background:none;
 		border:none;
 	}
@@ -130,6 +131,9 @@
 		padding-right: 2rem;
 	}
 /**/
+	.left {
+		text-align:left;
+	}
 	.note {
 		margin-top: 2rem;
 		padding:1rem;
@@ -139,14 +143,14 @@
 		background-color: rgba(100, 200, 100, .5);
 		border:1px solid rgba(100, 200, 100, 1);
 	}
-	#all_units {
+	.all_units {
 		text-align:left;
 	}
-	#all_units input {
+	.all_units input {
 		text-align:right;
 		width:50%;
 	}
-	#all_units input,
-	#all_units label {
+	.all_units input,
+	.all_units label {
 		display:inline;
 	}

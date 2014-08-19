@@ -1,9 +1,13 @@
 {
-  "name": "Computer Maths",
+  "name": "Compumaths",
   "description": "Basic mathematic operations applied to computers : base switching, files weight converter, random number generator",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/icon.png"
+    "256": "/icon_256.png",
+    "128": "/icon_128.png",
+    "96": "/icon_96.png",
+    "48": "/icon_48.png",
+    "24": "/icon_24.png"
   },
   "developer": {
     "name": "Tom Canac",

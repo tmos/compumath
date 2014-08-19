@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	<link rel="stylesheet" href="../style.css" type="text/css" />
-	<title>Digital unit converter</title>
+	<title>COmpumath - digital unit converter</title>
 </head>
 <body>
 	<header>
@@ -12,7 +12,6 @@
 	</header>
 
 	<main>
-		<label for="source">Quantité&nbsp;: </label> 
 		<input type="number" onkeyup="convert();" step="1" min="2" max="10000000000" id="source" value="1024" name="source" placeholder="1024" />
 		<select name="unite_i" id="unite_i" onchange="convert();">
 			<option value="o">o (octet)</option>
@@ -26,65 +25,69 @@
 			<option value="ti">Tio (tebioctet)</option>
 		</select>
 
-		<button onclick="convert();" id="convertir" class="centrer submit-centrer">Convertir</button>
+		<button onclick="convert();">Convert</button>
 
-		<table id="all_units">
+		<h2 class="left">1mo = 1000o</h2>
+		<table class="all_units">
 			<tr>
 				<td>
 					<input readonly type="text" id="o"/>
-					<label for="o">o (octet)</label> 
+					<label for="o">o</label>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<input readonly type="text" id="k"/>
-					<label for="k">ko (kilooctet)</label> 
-				</td>
-			</tr>
-			<tr>
-
-				<td>
-					<input readonly type="text" id="ki"/>
-					<label for="ki">kio (kibioctet)</label> 
+					<label for="k">ko</label>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<input readonly type="text" id="m"/>
-					<label for="m">Mo (mégaoctet)</label> 
+					<label for="m">Mo</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input readonly type="text" id="g"/>
+					<label for="g">Go</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input readonly type="text" id="t"/>
+					<label for="t">To</label> 
+				</td>
+			</tr>
+		</table>
+		<br>
+		<h2 class="left">1mo = 1024o</h2>
+		<table class="all_units">
+			<tr>
+
+				<td>
+					<input readonly type="text" id="ki"/>
+					<label for="ki">kio</label>
 				</td>
 			</tr>
 			<tr>
 
 				<td>
 					<input readonly type="text" id="mi"/>
-					<label for="mi">Mio (mébioctet)</label> 
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input readonly type="text" id="g"/>
-					<label for="g">Go (gigaoctet)</label> 
+					<label for="mi">Mio</label>
 				</td>
 			</tr>
 			<tr>
 
 				<td>
 					<input readonly type="text" id="gi"/>
-					<label for="gi">Gio (gibioctet)</label> 
+					<label for="gi">Gio</label>
 				</td>
 			</tr>
 			<tr>
-				<td>
-					<input readonly type="text" id="t"/>
-					<label for="t">To (téraoctet)</label> 
-				</td>
-			</tr>
-			<tr>
-
 				<td>
 					<input readonly type="text" id="ti"/>
-					<label for="ti">Tio (tébioctet)</label> 
+					<label for="ti">Tio</label> 
 				</td>
 			</tr>
 		</table>
