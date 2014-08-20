@@ -1,7 +1,7 @@
 {
   "name": "Compumaths",
   "description": "Basic mathematic operations applied to computers : base switching, files weight converter, random number generator.",
-  "version": "1",
+  "version": "1.1",
   "launch_path": "/index.html",
   "icons": {
     "256": "/icon_256.png",
