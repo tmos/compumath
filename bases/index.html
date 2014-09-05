@@ -7,11 +7,11 @@
 	<title>Compumath - base switcher</title>
 </head>
 <body>
-	<header>
-		<h1> <a id="back" href="../index.html"><</a> Base switcher</h1>
+	<header class="Header">
+		<h1 class="Header-h1"> <a class="Back" href="../index.html"><</a> Base switcher</h1>
 	</header>
 
-	<main>
+	<main class="Main">
 		<label for="source">Convert from the base </label>
 		<input type="number" step="1" min="2" max="36" id="source" value="10" name="source" placeholder="10" class="text" />
 
@@ -21,9 +21,9 @@
 		<label for="destination"> the number : </label>
 		<input type="text" id="nombre" value="42" name="nombre" placeholder="2" class="text" />
 
-		<button onclick="return convert();" id="convertir" class="centrer submit-centrer">Convert</button>
+		<button onclick="return convert();" class="Button">Convert</button>
 
-		<p id="resultat"></p>
+		<p id="output" class="Result"></p>
 
 		<aside class="note">
 			<p>Available bases are from 2 to 36.</p>
@@ -42,7 +42,7 @@
 			if (String(result) == 'NaN') {
 				result = 'la base '+base_source+' est impossible pour '+valeur; // par exemple "3" est impossible en binaire, où il n’y a que 0 et des 1.
 			}
-			document.getElementById('resultat').innerHTML = result;
+			document.getElementById('output').innerHTML = result;
 			return false;
 		}
 		convert();

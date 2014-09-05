@@ -7,18 +7,18 @@
 	<title>Compumath - base 64</title>
 </head>
 <body>
-	<header>
-		<h1> <a id="back" href="../index.html"><</a> Base 64 code and decode</h1>
+	<header class="Header">
+		<h1 class="Header-h1"> <a class="Back" href="../index.html"><</a> Base 64 code and decode</h1>
 	</header>
 
-	<main>
-		<label for="data">Source : </label> 
+	<main class="Main">
+		<label for="data">Source : </label>
 		<textarea id="data" rows="12" placeholder="Your text here"></textarea>
 		<p class="centrer">
-			<button onclick="go('encode');" class="submit-centrer blue"> &lt; Encode &gt; </button>
-			<button onclick="go('decode');" class="submit-centrer"> &gt; Decode &lt; </button>
+			<button onclick="go('encode');" class="Button"> &lt; Encode &gt; </button>
+			<button onclick="go('decode');" class="Button"> &gt; Decode &lt; </button>
 		</p>
-		<textarea id="output" rows="8" cols="50" readonly class="centrer" style="display:none;"></textarea>
+		<textarea id="output" class="Result" rows="8" cols="50" readonly class="centrer" style="display:none;"></textarea>
 	</main>
 
 	<script type="text/javascript" src="base64.js"></script>

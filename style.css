@@ -9,56 +9,43 @@
 	}
 	body {
 		margin: 0;
-		color: #222;
-		background-color: white;
+		color: #FFF;
+		background-color: #263137;
 		text-align: center;
-		font-family: 'trebuchet ms', arial, sans-serif;
+		font-family:'FiraSans','Open Sans Light', sans-serif;
 		font-size:1.1rem;
 	}
 	a {
 		text-decoration: none;
-	}
-	#about main {
-		text-align:left;
+		color:#FFF;
 	}
 /*header bar*/
-	header {
+	.Header {
 		text-align: left;
 		padding:0px;
+		background-color:#303D45;
+		border-bottom: 1px solid #1E252B;
 	}
-	header h1 {
+	.Header-h1 {
+		margin: 0;
+		padding: .5rem 0;
+		font-size: 2rem;
+
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
-	header h1,
-	#back {
-		margin: 0;
-		padding: .5rem 0;
-		font-size: 2rem;
-		font-weight:bold;
-	}
-	
-	#title {
+	.Header-h1.title {
 		text-align: center;
 	}
+
 /*main content*/
-	main {
-		background-color: #E7E7E7;
+	.Main {
 		margin: 0 auto 0;
-		padding: 20px;
-		border-top: 1px solid #D7D7D7;
-		border-bottom: 1px solid #D7D7D7;
 	}
-	main > * {
+	.Main > * {
 		width: 95%;
-		margin-left:auto;
-		margin-right:auto;
-	}
-/*footer*/
-	footer {
-		padding: 2rem 0;
-		font-size: .9rem;
+		margin:1rem auto;
 	}
 /*homepage navigation*/
 	nav ul {
@@ -66,17 +53,13 @@
 		padding: 0;
 	}
 	nav li {
-		background-color: #FFF;
-		margin: 5px;
-		box-shadow: 0px 1px 1px #C7C7C7;
-		border-radius: 10px;
 		line-height: 48px;/*the height of the icons*/
-		text-shadow: 1px 1px 2px silver;
 		text-align: left;
 	}
 	nav li a {
 		padding: 1.4rem;
 		display: block;
+		font-size:1.5rem;
 	}
 	nav li a img {
 		margin-right:1rem;
@@ -88,8 +71,8 @@
 	select,
 	textarea,
 	button {
-		border-radius:4px;
-		border:1px solid lightgrey;
+		border-radius:0px;
+		border:0px;
 	}
 	input,
 	select,
@@ -98,6 +81,7 @@
 		padding: .5rem;
 		font-size: 1rem;
 		background-color:#fff;
+		color:#1E252B:
 	}
 	input {
 		margin-bottom: 1rem;
@@ -111,37 +95,37 @@
 	textarea[readonly] {
 		background:none;
 		border:none;
+		color:#FFF;
 	}
-	button,
-	#back {
+	.Button {
 		cursor:pointer;
 		margin:1rem 0;
 		padding:1rem;
 		font-size:1.5rem;
 		font-weight:bold;
-
-		color:white;
-		border:none;
-		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2), 0px -1px 0px 0px rgba(0, 0, 0, 0.3) inset;
-		background-color: #277AC1;
-		background-image: linear-gradient(to bottom, #43A6E2, #277AC1);
+		color:#FFF;
+		background:#BB5045;
 	}
-	#back {
+/**/
+	.Back {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
-/**/
-	.left {
-		text-align:left;
+	.Result {
+		width:100%;
+		background:#14C598;
+		padding:2rem;
+
 	}
+/*≠*/
 	.note {
 		margin-top: 2rem;
 		padding:1rem;
-		border-radius: 3px;
-		color:#fff;
+
 		text-shadow:0 1px 1px rgba(0,0,0,.8);
-		background-color: rgba(100, 200, 100, .5);
-		border:1px solid rgba(100, 200, 100, 1);
+		background-color: #14C598;
+		font-weight:bold;
+		text-shadow:0 1px 1px #000;
 	}
 	.all_units {
 		text-align:left;
@@ -153,4 +137,10 @@
 	.all_units input,
 	.all_units label {
 		display:inline;
+	}
+	.About {
+		text-align:left;
+	}
+	.About a {
+		text-decoration:underline;
 	}

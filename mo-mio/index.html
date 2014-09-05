@@ -7,11 +7,11 @@
 	<title>COmpumath - digital unit converter</title>
 </head>
 <body>
-	<header>
-		<h1> <a id="back" href="../index.html"><</a> Digital unit converter</h1>
+	<header class="Header">
+		<h1 class="Header-h1"> <a class="Back" href="../index.html"><</a> Digital unit converter</h1>
 	</header>
 
-	<main>
+	<main class="Main">
 		<input type="number" onkeyup="convert();" step="1" min="2" max="10000000000" id="source" value="1024" name="source" placeholder="1024" />
 		<select name="unite_i" id="unite_i" onchange="convert();">
 			<option value="o">o (octet)</option>
@@ -25,10 +25,10 @@
 			<option value="ti">Tio (tebioctet)</option>
 		</select>
 
-		<button onclick="convert();">Convert</button>
+		<button class="Button" onclick="convert();">Convert</button>
 
-		<h2 class="left">1mo = 1000o</h2>
-		<table class="all_units">
+		<h2>1mo = 1000o</h2>
+		<table class="all_units Result">
 			<tr>
 				<td>
 					<input readonly type="text" id="o"/>
@@ -56,13 +56,12 @@
 			<tr>
 				<td>
 					<input readonly type="text" id="t"/>
-					<label for="t">To</label> 
+					<label for="t">To</label>
 				</td>
 			</tr>
 		</table>
-		<br>
-		<h2 class="left">1mo = 1024o</h2>
-		<table class="all_units">
+		<h2>1mo = 1024o</h2>
+		<table class="all_units Result">
 			<tr>
 
 				<td>
@@ -87,7 +86,7 @@
 			<tr>
 				<td>
 					<input readonly type="text" id="ti"/>
-					<label for="ti">Tio</label> 
+					<label for="ti">Tio</label>
 				</td>
 			</tr>
 		</table>
