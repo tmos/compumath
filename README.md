@@ -8,9 +8,5 @@ Based on HTML Mini-tools (Public Domain) by [Timo Van Neerden](http://lehollanda
  Extra credit :
  - icons : by Tiheum, under CC-BY-3.0 http://tiheum.deviantart.com/
 
--------
-
-As we enjoy great advantages from the inventions of others, we should be glad of an opportunity to serve others by any invention of ours, and this we should do freely and generously.
-
-— Benjamin Franklin
-
+## Warning :
+This is not a complex application. The code is very short and intend to have a very small energy-footprint to be able to run on low-end devices ($20 firefox os phones)
